@@ -1,6 +1,6 @@
 # 🎮 Hangman Game — Single & Local Multiplayer
 
-A modern Hangman game built with **React**, using **Zustand** for state management and structured with the **Presenter-Container pattern**. It supports both **Single Player** and **Local Multiplayer** modes — all running completely on the frontend (no WebSockets or backend).
+A Hangman game built with **React**, using **Zustand** for state management and structured with the **Presenter-Container pattern**. It supports both **Single Player** and **Local Multiplayer** modes — all running completely on the frontend (no WebSockets or backend).
 
 ---
 
