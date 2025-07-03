@@ -1,0 +1,14 @@
+.container{
+    height: 700px;
+    width: 800px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+   
+   
+
+}

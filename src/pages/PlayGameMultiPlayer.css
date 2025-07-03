@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.heading{
+   align-self: center;
+   margin-bottom: 20px;
+   font-weight: 500;
+   letter-spacing: 5px;
+   font-size: larger;
+}
+
+.links{
+    align-self:center;
+
+}
+
+.maskedText{
+    font-size: x-large;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.hint{
+    letter-spacing: 5px;
+    font-weight: 500;
+}
