@@ -1,12 +1,59 @@
-# React + Vite
+# 🎮 Hangman Game — Single & Local Multiplayer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern Hangman game built with **React**, using **Zustand** for state management and structured with the **Presenter-Container pattern**. It supports both **Single Player** and **Local Multiplayer** modes — all running completely on the frontend (no WebSockets or backend).
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+👉 [Play Now](hangman-game-three-sable.vercel.app
+)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠 Tech Stack
+
+- **React.js** — UI library
+- **Zustand** — Lightweight global state management
+- **Tailwind CSS** — Styling 
+- **Vite** — Fast development bundler
+- **Presenter-Container Pattern** — Clean architecture
+
+---
+
+## 🧠 Architecture Overview
+
+
+
+## 🎯 Features
+
+### ✅ Game Modes
+
+- **Single Player**: Random word generator
+- **Local Multiplayer**: 
+  - One player sets a custom word.
+  - The second player tries to guess it.
+  - All handled within the same device/session.
+
+### ✨ Gameplay
+
+- QWERTY-style virtual keyboard
+- Hangman figure reveals with wrong guesses
+- Game reset / replay option
+
+---
+
+## 🧩 How to Play
+
+### Single Player
+- Click "Single Player" to start.
+- The app randomly selects a word.
+- Guess one letter at a time before the full hangman appears.
+
+### Local Multiplayer
+- Click "Multiplayer".
+- Player 1 inputs a secret word.
+- Player 2 then guesses using the virtual keyboard.
+- All logic is handled on the frontend with local state.
+
+
