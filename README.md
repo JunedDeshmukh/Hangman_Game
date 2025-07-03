@@ -21,12 +21,6 @@ A Hangman game built with **React**, using **Zustand** for state management and 
 
 ---
 
-## 🧠 Architecture Overview
-
-
-
-## 🎯 Features
-
 ### ✅ Game Modes
 
 - **Single Player**: Random word generator
