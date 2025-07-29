@@ -7,6 +7,7 @@ import HangMan from "../components/Hangman/Hangman";
 import useWordStore from "../stores/WordStore";
 import './PlayGame.css'
 
+
 function PlayGame() {
 
     // const [searchParams] = useSearchParams();
@@ -19,6 +20,7 @@ function PlayGame() {
     // const { wo rd } = useContext(WordContext);
 
     const { wordList, word } = useWordStore();
+
 
     const [guessedLetters, setGuessedLetters] = useState([]);
     const [step, setStep] = useState(0);

@@ -1,8 +1,9 @@
-import { Link } from "react-router-dom";
+import {  Link } from "react-router-dom";
 import Button from "../components/Button/Button";
 import { useEffect } from "react";
 // import { WordContext } from "../context/WordContext";
 import useWordStore from "../stores/WordStore";
+import {words} from '../db.json'
 
 function Home() {
     
@@ -11,16 +12,17 @@ function Home() {
     const { setWordList, setWord } = useWordStore(); // coming from the store
 
     async function fetchWords() {
-        const response = await fetch('http://localhost:3000/words');
-        const data = await response.json();
-        console.log(data);
+        // const data= fetch('/db.json')
+        // const response = await fetch('http://localhost:3000/words');
+        // const data = await response.json();
+        console.log(words);
 
-        setWordList([...data])
+        setWordList([...words])
 
-        const randomIndex = Math.floor(Math.random() * data.length);
-        console.log(data[randomIndex].wordHint);
-         console.log(data[randomIndex].wordValue);
-        setWord(data[randomIndex].wordValue);
+        const randomIndex = Math.floor(Math.random() * words.length);
+        console.log(words[randomIndex].wordHint);
+         console.log(words[randomIndex].wordValue);
+        setWord(words[randomIndex].wordValue);
     }
 
     useEffect(() => {
