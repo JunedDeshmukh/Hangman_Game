@@ -3,6 +3,7 @@ import Button from "../components/Button/Button";
 import { useEffect } from "react";
 // import { WordContext } from "../context/WordContext";
 import useWordStore from "../stores/WordStore";
+import useHintStore from "../stores/HintStore";
 import {words} from '../db.json'
 
 function Home() {
@@ -10,6 +11,7 @@ function Home() {
     // const { setWord } = useContext(WordContext);
 
     const { setWordList, setWord } = useWordStore(); // coming from the store
+    const{setHint} = useHintStore();
 
     async function fetchWords() {
         // const data= fetch('/db.json')
@@ -23,6 +25,7 @@ function Home() {
         console.log(words[randomIndex].wordHint);
          console.log(words[randomIndex].wordValue);
         setWord(words[randomIndex].wordValue);
+        setHint(words[randomIndex].wordHint);
     }
 
     useEffect(() => {
