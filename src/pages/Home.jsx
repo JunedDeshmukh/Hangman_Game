@@ -33,7 +33,7 @@ function Home() {
     }, []);
 
     return (
-        <div >
+        <div className="">
             <h1 className="tracking-widest text-6xl text-center mb-15 text-shadow-lg">HANGMAN</h1>
             <br/>
             <div className="gap-10">

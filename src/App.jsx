@@ -5,6 +5,7 @@ import './App.css'
 import { Route,Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import PlayGameMultiPlayer from './pages/PlayGameMultiPlayer'
+import { GameOver } from './pages/GameOver'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <Route path='/play' element={<PlayGame/>} />
         <Route path='/' element={<Home/>} />
         <Route path='/multiplayer' element={<PlayGameMultiPlayer/>} />
+        <Route path='/gameover' element={<GameOver/>} />
 
       </Routes>
         
