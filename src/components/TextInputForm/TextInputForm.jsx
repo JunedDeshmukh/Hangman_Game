@@ -8,8 +8,8 @@ function TextInputForm({ inputType, handleFormSubmit, handleTextInputChange, han
             <div>
                 <TextInput 
                     type={inputType}
-                    label="Enter a word or a phrase"
-                    placeholder="Enter a word or phrase here ..."
+                    label="Enter a word"
+                    placeholder="Enter a word ..."
                     onChangeHandler={handleTextInputChange}
                 />
             </div>
