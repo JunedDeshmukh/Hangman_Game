@@ -41,7 +41,19 @@ function PlayGame() {
       navigate("/gameover");
     }
 
-    setGuessedLetters([...guessedLetters, letter]);
+    // setGuessedLetters([...guessedLetters, letter]);
+     const updatedGuessed = [...guessedLetters, letter];
+  setGuessedLetters(updatedGuessed);
+
+  // Check if all letters in the word are guessed
+  const wordLetters = state.wordSelected?.toUpperCase().split('');
+  const allGuessed = wordLetters.every((l) => updatedGuessed.includes(l));
+
+  if (allGuessed) {
+    // 🎉 All letters guessed correctly
+    console.log("You won!");
+    navigate('/nextlevelmulti'); // or show success modal
+  }
   }
 
   return (
